@@ -1,10 +1,10 @@
 	/* ==================================================================
-								
-								Author       	: Nadir Ali
-								Template Name	: Alpha Dot - Multi Purpose HTML5 Template
-								Version      	: 1.0
-								
-								* ================================================================= */
+															
+															Author       	: Nadir Ali
+															Template Name	: Alpha Dot - Multi Purpose HTML5 Template
+															Version      	: 1.0
+															
+															* ================================================================= */
 	jQuery(document).ready(function($) {
 	    "use strict";
 	    $('#customers-testimonials').owlCarousel({
@@ -14,10 +14,9 @@
 	        margin: 30,
 	        autoplay: true,
 	        dots: true,
-	        nav: true,
+	        // nav: true,
 	        autoplayTimeout: 8500,
 	        smartSpeed: 450,
-	        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 	        responsive: {
 	            0: {
 	                items: 1
@@ -41,10 +40,9 @@
 	        margin: 30,
 	        autoplay: true,
 	        dots: true,
-	        nav: true,
+	        // nav: true,
 	        autoplayTimeout: 8500,
 	        smartSpeed: 450,
-	        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 	        responsive: {
 	            0: {
 	                items: 1
@@ -68,10 +66,9 @@
 	        margin: 30,
 	        autoplay: true,
 	        dots: true,
-	        nav: true,
+	        // nav: true,
 	        autoplayTimeout: 8500,
 	        smartSpeed: 450,
-	        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 	        responsive: {
 	            0: {
 	                items: 1
@@ -87,6 +84,39 @@
 	});
 
 
+	idleTimer = null;
+	idleState = false;
+	idleWait = 10000;
+
+	(function($) {
+
+	    $(document).ready(function() {
+
+	        $('*').bind('mousemove keydown scroll', function() {
+
+	            clearTimeout(idleTimer);
+
+	            if (idleState == true) {
+
+	                // Reactivated event
+	                $("#ss").hide();
+	            }
+
+	            idleState = false;
+
+	            idleTimer = setTimeout(function() {
+
+	                // Idle Event
+	                $("#ss").show();
+
+	                idleState = true;
+	            }, idleWait);
+	        });
+
+	        $("body").trigger("mousemove");
+
+	    });
+	})(jQuery)
 
 	/* ==================================================================
 	 LOADER OVERLAY

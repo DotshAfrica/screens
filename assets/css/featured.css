@@ -1,5 +1,5 @@
 .testimonials {
-  z-index: 10000;
+  z-index: 9000;
   position: relative;
 }
 
@@ -38,7 +38,9 @@
 
 #customers-testimonials .item {
   text-align: center;
-  margin-bottom: 80px;
+  background-color: white;
+  height: 200px;
+  border-radius: 10px;
 }
 
 #customers-testimonials1 .item-details {
@@ -66,7 +68,9 @@
 
 #customers-testimonials1 .item {
   text-align: center;
-  margin-bottom: 80px;
+  background-color: white;
+  height: 200px;
+  border-radius: 10px;
 }
 
 #customers-testimonials2 .item-details {
@@ -94,7 +98,15 @@
 
 #customers-testimonials2 .item {
   text-align: center;
-  margin-bottom: 80px;
+  background-color: white;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.page2 .item {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .owl-carousel .owl-nav [class*='owl-'] {
@@ -123,11 +135,15 @@
 #iphoneh {
   background-color: transparent;
   border: 0;
+  min-height: -webkit-fit-content !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
 }
 
 #samsungh {
   background-color: transparent;
   border: 0;
+  border-radius: 10px;
 }
 
 #huaweih {
@@ -149,6 +165,9 @@
   background-color: white;
   border: 0;
   border-radius: 5px;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 
 #samsung2 {
@@ -173,32 +192,32 @@
   border: 0;
 }
 
-#iphoneh2 {
+#iphoneh2t {
   background-color: transparent;
   border: 0;
 }
 
-#samsungh2 {
+#samsungh2t {
   background-color: transparent;
   border: 0;
 }
 
-#samsungh22 {
+#samsungh22t {
   background-color: transparent;
   border: 0;
 }
 
-#huaweih2 {
+#huaweih2t {
   background-color: transparent;
   border: 0;
 }
 
-#huaweih22 {
+#huaweih22t {
   background-color: transparent;
   border: 0;
 }
 
-#iphoneh22 {
+#iphoneh22t {
   background-color: transparent;
   border: 0;
 }
