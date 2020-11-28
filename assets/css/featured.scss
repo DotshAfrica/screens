@@ -15,6 +15,10 @@
     }
 }
 
+h5 {
+    text-align: center!important;
+}
+
 #customers-testimonials {
     .item-details {
         background-color: #ffffff;
@@ -39,7 +43,7 @@
         text-align: center;
         background-color: white;
         height: 200px;
-        border-radius: 10px;
+        // border-radius: 10px;
         // padding: 20px;
         // margin-bottom: 80px;
     }
@@ -69,7 +73,7 @@
         text-align: center;
         background-color: white;
         height: 200px;
-        border-radius: 10px;
+        // border-radius: 10px;
         // padding: 20px;
         // margin-bottom: 80px;
     }
@@ -99,7 +103,7 @@
         text-align: center;
         background-color: white;
         height: 200px;
-        border-radius: 10px;
+        // border-radius:  10px;
         // padding: 20px;
         // margin-bottom: 80px;
     }
@@ -116,9 +120,16 @@
     }
 }
 
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    padding: 20px!important;
+}
+
 .owl-carousel .owl-nav [class*='owl-'] {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+    padding: 20px!important;
 }
 
 .owl-carousel .owl-nav [class*='owl-'].disabled:hover {
@@ -127,6 +138,14 @@
 
 .owl-carousel {
     position: relative;
+}
+
+h4 {
+    text-decoration: underline!important;
+    font-size: 25px;
+    // font-weight: bold;
+    color: #39B54A;
+    padding-top: 20px;
 }
 
 // 1
@@ -149,10 +168,25 @@
 #samsungh {
     background-color: transparent;
     border: 0;
-    border-radius: 10px;
+    // border-radius: 10px;
 }
 
 #huaweih {
+    background-color: transparent;
+    border: 0;
+}
+
+#oppoh {
+    background-color: transparent;
+    border: 0;
+}
+
+#oppoh2t {
+    background-color: transparent;
+    border: 0;
+}
+
+#oppoh3 {
     background-color: transparent;
     border: 0;
 }
@@ -181,6 +215,12 @@
 }
 
 #huawei2 {
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+#oppo2 {
     background-color: white;
     border: 0;
     border-radius: 5px;
@@ -245,6 +285,12 @@
     border-radius: 5px;
 }
 
+#oppo22 {
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
 // 3
 #mobileh3 {
     background-color: transparent;
@@ -297,4 +343,27 @@
     background-color: white;
     border: 0;
     border-radius: 5px;
+}
+
+#oppo23 {
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+#ss {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: #39B54A 2px solid;
+    }
 }

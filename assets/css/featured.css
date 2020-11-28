@@ -13,6 +13,10 @@
   height: 30%;
 }
 
+h5 {
+  text-align: center !important;
+}
+
 #customers-testimonials .item-details {
   background-color: #ffffff;
   color: #fff;
@@ -40,7 +44,6 @@
   text-align: center;
   background-color: white;
   height: 200px;
-  border-radius: 10px;
 }
 
 #customers-testimonials1 .item-details {
@@ -70,7 +73,6 @@
   text-align: center;
   background-color: white;
   height: 200px;
-  border-radius: 10px;
 }
 
 #customers-testimonials2 .item-details {
@@ -100,7 +102,6 @@
   text-align: center;
   background-color: white;
   height: 200px;
-  border-radius: 10px;
 }
 
 .page2 .item {
@@ -109,9 +110,16 @@
   border-radius: 20px;
 }
 
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  padding: 20px !important;
+}
+
 .owl-carousel .owl-nav [class*='owl-'] {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  padding: 20px !important;
 }
 
 .owl-carousel .owl-nav [class*='owl-'].disabled:hover {
@@ -120,6 +128,13 @@
 
 .owl-carousel {
   position: relative;
+}
+
+h4 {
+  text-decoration: underline !important;
+  font-size: 25px;
+  color: #39B54A;
+  padding-top: 20px;
 }
 
 #mobileh {
@@ -143,10 +158,24 @@
 #samsungh {
   background-color: transparent;
   border: 0;
-  border-radius: 10px;
 }
 
 #huaweih {
+  background-color: transparent;
+  border: 0;
+}
+
+#oppoh {
+  background-color: transparent;
+  border: 0;
+}
+
+#oppoh2t {
+  background-color: transparent;
+  border: 0;
+}
+
+#oppoh3 {
   background-color: transparent;
   border: 0;
 }
@@ -177,6 +206,12 @@
 }
 
 #huawei2 {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+#oppo2 {
   background-color: white;
   border: 0;
   border-radius: 5px;
@@ -240,6 +275,12 @@
   border-radius: 5px;
 }
 
+#oppo22 {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
 #mobileh3 {
   background-color: transparent;
   border: 0;
@@ -291,5 +332,30 @@
   background-color: white;
   border: 0;
   border-radius: 5px;
+}
+
+#oppo23 {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+#ss {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#ss video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: #39B54A 2px solid;
 }
 /*# sourceMappingURL=featured.css.map */

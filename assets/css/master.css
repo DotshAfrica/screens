@@ -73,9 +73,9 @@ body {
 
 body {
     color: rgb(26, 26, 26);
-    background: #f1f1f1;
+    background: #F0F8FF;
     font-size: 17px;
-    font-family: 'Source Sans Pro', sans-serif!important;
+    font-family: 'futuramedium'!important;
 }
 
 .mdi {
@@ -98,7 +98,6 @@ h6 {
     color: #2d2d2d;
     margin: 10px 0;
     font-style: normal;
-    font-family: 'Source Sans Pro', sans-serif!important;
 }
 
 h1,
@@ -269,6 +268,20 @@ section {
 /*=============================================
               		Header
 =============================================*/
+
+.item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@font-face {
+    font-family: 'futuramedium';
+    src: url('../fonts/futura_medium_bt-webfont.woff2') format('woff2'), url('../fonts/futura_medium_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ************************* */
 
 .logo img {
     /* min-height: 90px; */
@@ -1358,15 +1371,15 @@ button:focus {
 
 .btn-white {
     color: #ffffff;
-    border-color: #016634;
-    background-color: #016634;
+    border-color: #39B54A;
+    background-color: #39B54A;
 }
 
 .btn-white:hover,
 .btn-white:active,
 .btn-white:focus {
-    color: #016634;
-    border-color: #016634;
+    color: #39B54A;
+    border-color: #39B54A;
     background-color: transparent;
 }
 
@@ -2968,7 +2981,7 @@ img.mfp-img {
 }
 
 .post-info h6 {
-    color: #016634;
+    color: #39B54A;
     font-weight: 600;
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
@@ -3592,7 +3605,7 @@ ul.footer-gallery li img {
     height: 35px;
     text-align: center;
     line-height: 35px;
-    background: #016634;
+    background: #39B54A;
     color: #fff;
     cursor: pointer;
     border: 0;
@@ -5618,8 +5631,8 @@ form.register {
 }
 
 aside {
-    border-top: 0px solid #016634;
-    border-bottom: 0px solid #016634;
+    border-top: 0px solid #39B54A;
+    border-bottom: 0px solid #39B54A;
     border-radius: 30%;
     margin: auto;
     display: block;
@@ -5641,8 +5654,8 @@ aside header {
 
 aside:hover {
     padding-top: 10px;
-    border-top: 4px solid #016634;
-    border-bottom: 4px solid #016634;
+    border-top: 4px solid #39B54A;
+    border-bottom: 4px solid #39B54A;
     border-radius: 5px;
     height: auto;
     width: 350px;
