@@ -1,10 +1,10 @@
 	/* ==================================================================
-																				
-																				Author       	: Nadir Ali
-																				Template Name	: Alpha Dot - Multi Purpose HTML5 Template
-																				Version      	: 1.0
-																				
-																				* ================================================================= */
+																					
+																					Author       	: Nadir Ali
+																					Template Name	: Alpha Dot - Multi Purpose HTML5 Template
+																					Version      	: 1.0
+																					
+																					* ================================================================= */
 	jQuery(document).ready(function($) {
 	    "use strict";
 	    $('#customers-testimonials').owlCarousel({
@@ -86,7 +86,7 @@
 
 	idleTimer = null;
 	idleState = false;
-	idleWait = 45000;
+	idleWait = 60000;
 
 	(function($) {
 

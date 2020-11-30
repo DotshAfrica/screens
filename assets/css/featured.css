@@ -17,6 +17,10 @@ h5 {
   text-align: center !important;
 }
 
+h3 {
+  text-align: center;
+}
+
 #customers-testimonials .item-details {
   background-color: #ffffff;
   color: #fff;
@@ -142,6 +146,11 @@ h4 {
   border: 0;
 }
 
+#accessoriesh {
+  background-color: transparent;
+  border: 0;
+}
+
 #masokoh {
   background-color: transparent;
   border: 0;
@@ -222,6 +231,11 @@ h4 {
   border: 0;
 }
 
+#accessoriesh2 {
+  background-color: transparent;
+  border: 0;
+}
+
 #masokoh2 {
   background-color: transparent;
   border: 0;
@@ -282,6 +296,11 @@ h4 {
 }
 
 #mobileh3 {
+  background-color: transparent;
+  border: 0;
+}
+
+#accessoriesh3 {
   background-color: transparent;
   border: 0;
 }
@@ -357,5 +376,21 @@ h4 {
   top: 0;
   left: 0;
   border: #39B54A 2px solid;
+}
+
+.col1 .btn-white {
+  left: -175px;
+}
+
+.col2 .btn-white {
+  left: 260px;
+}
+
+.col3 .btn-white {
+  left: 685px;
+}
+
+.owl-carousel .owl-stage-outer {
+  max-height: 250px !important;
 }
 /*# sourceMappingURL=featured.css.map */

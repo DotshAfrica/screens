@@ -75,7 +75,8 @@ body {
     color: rgb(26, 26, 26);
     background: #F0F8FF;
     font-size: 17px;
-    font-family: 'futuramedium'!important;
+    /* font-family: 'futuramedium'!important; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .mdi {
@@ -1209,6 +1210,120 @@ a:focus {
     width: 100%;
 }
 
+#product-info {
+    display: flex;
+    width: 95%;
+    margin: 0 auto
+}
+
+.item-image-parent {
+    order: 1;
+    width: 50%;
+    display: flex;
+}
+
+.item-info-parent {
+    order: 2;
+    width: 50%;
+}
+
+.item-list-vertical {
+    order: 1;
+    width: 10%;
+    overflow-y: auto;
+    margin-top: 50px;
+}
+
+.item-image-main {
+    order: 2;
+    width: 90%;
+    height: 100%;
+}
+
+
+/* sectioning completed */
+
+.thumb-box {
+    width: 75%;
+    margin: 10px auto;
+    background: white;
+    border: 1px solid gray;
+}
+
+.thumb-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-image-main img {
+    width: 100%;
+    height: auto;
+}
+
+.thumb-box:hover {
+    cursor: pointer;
+    border-color: #e77600;
+    ;
+    box-shadow: 0px 1px 5px 1px #e77600;
+}
+
+
+/* Item Info */
+
+.main-info h4 {
+    font-size: 21px;
+    margin-bottom: 0;
+    font-weight: 400
+}
+
+.star-rating {
+    width: 70%;
+    color: gray;
+    font-size: 24px;
+    border-bottom: 0.4px solid rgba(194, 194, 194, 0.829);
+}
+
+.star-rating span {
+    color: gold;
+}
+
+.main-info p {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+#price {
+    color: rgb(168, 14, 14);
+    font-size: 21px;
+}
+
+
+/* Select Items */
+
+.change-color {
+    margin-bottom: 10px;
+}
+
+.change-color .thumb-box {
+    margin: 10px 10px 10px 0;
+    width: 40px;
+    display: inline-block;
+}
+
+.change-size select {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-color: rgb(189, 189, 189);
+    margin-top: 10px;
+}
+
+.description ul {
+    padding-left: 17px;
+    font-size: 15px;
+    line-height: 1.3rem;
+}
+
 .btn,
 .form-control,
 .form-control:hover,
@@ -1371,7 +1486,18 @@ button:focus {
 
 .btn-white {
     color: #ffffff;
-    border-color: #39B54A;
+    transform: rotate(-90deg);
+    border-color: #ffffff;
+    /* vertical-align: middle; */
+    position: fixed;
+    z-index: 1000;
+    border-radius: 10px;
+    top: 45%;
+    /* left: 20px; */
+    margin-left: 0px;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* float: left; */
     background-color: #39B54A;
 }
 
