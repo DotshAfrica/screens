@@ -75,8 +75,8 @@ body {
     color: rgb(26, 26, 26);
     background: #F0F8FF;
     font-size: 17px;
-    /* font-family: 'futuramedium'!important; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'futuramedium'!important;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 .mdi {

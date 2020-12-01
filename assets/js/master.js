@@ -1,10 +1,10 @@
 	/* ==================================================================
-																					
-																					Author       	: Nadir Ali
-																					Template Name	: Alpha Dot - Multi Purpose HTML5 Template
-																					Version      	: 1.0
-																					
-																					* ================================================================= */
+																												
+																												Author       	: Nadir Ali
+																												Template Name	: Alpha Dot - Multi Purpose HTML5 Template
+																												Version      	: 1.0
+																												
+																												* ================================================================= */
 	jQuery(document).ready(function($) {
 	    "use strict";
 	    $('#customers-testimonials').owlCarousel({
@@ -100,6 +100,7 @@
 
 	                // Reactivated event
 	                $("#ss").hide();
+
 	            }
 
 	            idleState = false;
@@ -117,6 +118,8 @@
 
 	    });
 	})(jQuery)
+
+
 
 	/* ==================================================================
 	 LOADER OVERLAY
@@ -961,5 +964,87 @@
 
 
 	});
+
+
+	// dancing zuri
+	// --------  SHAKE ------------
+	var box1 = document.querySelectorAll("#bubbleOne1")[0];
+
+	function shake(element, shakes, speed) {
+	    var tl = new TimelineLite();
+	    TweenLite.set(element, { x: "+=0" }); // this creates a full _gsTransform on element
+	    var transforms = element._gsTransform;
+
+	    //store the transform values that exist before the shake so we can return to them later
+	    var initProps = {
+	        x: transforms.x,
+	        y: transforms.y
+	    }
+
+	    //shake a few times
+	    for (var i = 0; i < shakes; i++) {
+	        tl.to(element, speed, { x: initProps.x + R(-10, 10), y: initProps.y + R(-8, 8) })
+	    }
+
+	    return tl;
+	};
+
+	function R(max, min) { return Math.random() * (max - min) + min };
+
+	//TweenLite
+	var tl = new TimelineMax({ repeat: -1, yoyo: true });
+	tl.add(shake(box1, 50, 0.55))
+
+
+	// ---------- ROTATE SVG ------------
+
+	/* Store components for easy reference */
+	var backdrop = document.getElementById('backdrop-back');
+	var bubble1 = document.getElementById('bubbleOne2');
+
+	/* Backdrop */
+	TweenMax.to(backdrop, 4, {
+	    rotation: 360,
+	    svgOrigin: '84 84',
+	    repeat: -1,
+	    ease: Linear.easeNone
+	});
+
+
+	//Timeline
+	var makeBubbleTimeline = function(ease, reverse, duration) {
+	    duration = duration || 0.8;
+	    return new TimelineMax()
+	        .to(bubble1, duration, {
+	            opacity: 0.5,
+	            transformOrigin: "50% 50%",
+	            scale: 1.2,
+	            ease: ease
+	        }, 0);
+	};
+
+
+	/* bubble 1*/
+	var bubbleTimeline = new TimelineMax({ paused: true })
+	    .add(makeBubbleTimeline(Quad.easeOut))
+
+
+	/* play or reverse timeline */
+	var bub = function() {
+	    if (!bubbleTimeline.isActive()) {
+	        bubbleTimeline.restart();
+	    }
+	};
+
+	var bubdone = function() {
+	    bubbleTimeline.reverse();
+	};
+
+	//event listeners for bubble button
+	bubble1.addEventListener('touchstart', bub);
+	bubble1.addEventListener('mousedown', bub);
+	bubble1.addEventListener('touchend', bubdone);
+	bubble1.addEventListener('mouseup', bubdone);
+
 
 	/*End Jquery*/
